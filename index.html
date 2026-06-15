@@ -1,11 +1,312 @@
 <!DOCTYPE html>
-    <link rel="stylesheet" href="style.css">
-    <html>
-        <head>
-            <title>My Portfolio</title>
-        </head>
-        <body>
-            <h1>Hello, I'm Your Name</h1>
-            <p>Welcome to my portfolio</p>
-        </body>
-    </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Falling leaves — drawn on canvas, opacity controlled in CSS -->
+  <canvas id="leaf-canvas" aria-hidden="true"></canvas>
+
+  <header>
+    <span class="site-name">[Your Name]</span>
+    <nav class="tab-nav" role="tablist" aria-label="Portfolio sections">
+      <button class="tab-btn active" role="tab" aria-selected="true"
+              aria-controls="panel-modelling" data-tab="modelling">
+        3D Modelling
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false"
+              aria-controls="panel-about" data-tab="about">
+        About
+      </button>
+      <button class="tab-btn" role="tab" aria-selected="false"
+              aria-controls="panel-software" data-tab="software">
+        Software Dev
+        <span class="soon-badge" aria-label="coming soon">soon</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         3D MODELLING
+    ══════════════════════════════════════════ -->
+    <section class="tab-panel active" id="panel-modelling"
+             role="tabpanel" aria-label="3D Modelling">
+
+      <!-- Carousel ─────────────────────────────── -->
+      <div class="section reveal" id="carousel-section">
+        <h2 class="section-label">Work</h2>
+        <div class="carousel-wrap">
+
+          <div class="carousel-track-outer" id="carousel-track-outer">
+            <div class="carousel-track" id="carousel-track">
+              <!-- Slides are built by index.js from the projects array -->
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-arrow" id="carousel-prev" aria-label="Previous project">&#8592;</button>
+            <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Project navigation"></div>
+            <button class="carousel-arrow" id="carousel-next" aria-label="Next project">&#8594;</button>
+          </div>
+
+        </div>
+        <div class="carousel-view-all-row">
+          <button class="view-all-btn" id="view-all-btn">View All Work →</button>
+        </div>
+      </div>
+
+      <!-- Masonry "View All" — expands inline below carousel ── -->
+      <div class="masonry-section" id="masonry-section" aria-label="All work">
+        <div class="masonry-header">
+          <h2 class="section-label" style="margin-bottom:0">All Work</h2>
+          <button class="masonry-close" id="masonry-close">Close ×</button>
+        </div>
+        <div class="masonry-grid" id="masonry-grid">
+          <!-- Built by index.js -->
+        </div>
+      </div>
+
+      <!-- Software ──────────────────────────────── -->
+      <div class="section reveal reveal-delay-1">
+        <h2 class="section-label">Software</h2>
+        <div class="tags">
+          <span class="tag">[Software Name]</span>
+          <span class="tag">[Software Name]</span>
+          <span class="tag">[Software Name]</span>
+          <span class="tag">[Software Name]</span>
+          <span class="tag">[Software Name]</span>
+        </div>
+      </div>
+
+      <!-- Downloads ─────────────────────────────── -->
+      <div class="section reveal reveal-delay-2">
+        <h2 class="section-label">Downloads</h2>
+        <ul class="download-list">
+          <li class="download-item">
+            <a href="#" class="download-link">
+              <span class="download-name">[File or Project Name]</span>
+              <span class="download-meta">[Format] · [Size]</span>
+              <span class="download-icon" aria-hidden="true">↓</span>
+            </a>
+          </li>
+          <li class="download-item">
+            <a href="#" class="download-link">
+              <span class="download-name">[File or Project Name]</span>
+              <span class="download-meta">[Format] · [Size]</span>
+              <span class="download-icon" aria-hidden="true">↓</span>
+            </a>
+          </li>
+          <li class="download-item">
+            <a href="#" class="download-link">
+              <span class="download-name">[File or Project Name]</span>
+              <span class="download-meta">[Format] · [Size]</span>
+              <span class="download-icon" aria-hidden="true">↓</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         ABOUT
+         — bio types itself in when tab is opened
+         — stats card shows screenshot on hover
+    ══════════════════════════════════════════ -->
+    <section class="tab-panel" id="panel-about"
+             role="tabpanel" aria-label="About">
+
+      <!-- Typewriter bio — no .reveal, cursor appears first then types ── -->
+      <div class="about-section">
+        <!--
+          data-text: replace the placeholder below with your real bio.
+          Avoid apostrophes inside the attribute value; use &#39; if needed.
+        -->
+        <p class="about-tagline" id="about-tagline"
+           data-text="[A personal statement about who you are as a 3D artist — your style, what drives the work, and where you want to take it. Replace this placeholder with something honest and specific to you.]"><span
+           id="typewriter-text-content"></span><span class="typewriter-cursor" aria-hidden="true"></span></p>
+      </div>
+
+      <!-- Stats ─────────────────────────────────── -->
+      <div class="section reveal">
+        <h2 class="section-label">Stats</h2>
+        <div class="stats-row">
+
+          <!-- Blender hours — hover reveals screenshot ── -->
+          <!-- Replace blender-hours.png with your actual screenshot file -->
+          <div class="stat-card">
+            <span class="stat-card-label">Hours in Blender</span>
+            <span class="stat-card-value">[X,XXX]</span>
+            <span class="stat-card-sub">and counting</span>
+            <div class="stat-card-screenshot" id="blender-screenshot-wrap">
+              <img src="blender-hours.png" alt="Blender hours screenshot" id="blender-screenshot-img">
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-card-label">Projects Completed</span>
+            <span class="stat-card-value">[XX]</span>
+            <span class="stat-card-sub">client &amp; personal</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-card-label">Years Modelling</span>
+            <span class="stat-card-value">[X]</span>
+            <span class="stat-card-sub">self-taught</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Background ─────────────────────────────── -->
+      <!-- about-body has its own border-top + margin in CSS, sits below stats -->
+      <div class="about-body reveal">
+        <div class="about-left">
+          <p class="about-p">[Your background — how you got into 3D modelling and what keeps you coming back to it. Be specific about what draws you to the craft.]</p>
+          <p class="about-p">[Your current focus — what you are working on right now, what you are learning, and where you want to take your work next.]</p>
+        </div>
+        <div class="about-right">
+          <div class="about-fact-group">
+            <span class="about-fact-label">Speciality</span>
+            <span class="about-fact-value">[e.g. Hard Surface / Environments / Characters]</span>
+          </div>
+          <div class="about-fact-group">
+            <span class="about-fact-label">Primary Software</span>
+            <span class="about-fact-value">[e.g. Blender 4.x]</span>
+          </div>
+          <div class="about-fact-group">
+            <span class="about-fact-label">Based</span>
+            <span class="about-fact-value">[Your location]</span>
+          </div>
+          <div class="about-fact-group">
+            <span class="about-fact-label">Available For</span>
+            <span class="about-fact-value">[Commission / Freelance / Collab]</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         SOFTWARE DEV
+         — terminal lines animate in on tab open
+    ══════════════════════════════════════════ -->
+    <section class="tab-panel" id="panel-software"
+             role="tabpanel" aria-label="Software Development">
+
+      <!-- Hero — no .reveal, panel animation handles entry ── -->
+      <div class="software-hero">
+        <p class="section-label">Software Development</p>
+        <h2 class="software-title">Something is<br><em>growing here.</em></h2>
+        <p class="software-soon-text">[Your background in software — languages, frameworks, tools, projects you are building or learning. This section is actively being developed.]</p>
+        <div class="terminal-block">
+          <div class="terminal-bar">
+            <span class="terminal-dot red"  aria-hidden="true"></span>
+            <span class="terminal-dot amber" aria-hidden="true"></span>
+            <span class="terminal-dot green" aria-hidden="true"></span>
+            <span class="terminal-title">~/portfolio — software</span>
+          </div>
+          <div class="terminal-body" id="terminal-body" aria-live="polite">
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-cmd">git log --oneline -1</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">a3f9c12 feat: portfolio live, software incoming</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-cmd">ls projects/</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output terminal-warn">[in-progress]/&nbsp;&nbsp;[planned]/&nbsp;&nbsp;[not-yet-named]/</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-cmd">cat status.md</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output terminal-success">building. come back soon.</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="cs-cursor" aria-hidden="true">_</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages & Tools ─────────────────────── -->
+      <div class="section reveal">
+        <h2 class="section-label">Languages &amp; Tools</h2>
+        <div class="tags">
+          <span class="tag">[Language]</span>
+          <span class="tag">[Language]</span>
+          <span class="tag">[Framework]</span>
+          <span class="tag">[Tool]</span>
+          <span class="tag">[Tool]</span>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ══════════════════════════════════════════
+       PROJECT MODAL — full-screen lightbox
+       Opens when "View Details" is clicked.
+  ══════════════════════════════════════════ -->
+  <div class="modal-backdrop" id="modal-backdrop"
+       role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal" id="modal">
+
+      <div class="modal-header">
+        <h2 class="modal-title" id="modal-title"></h2>
+        <button class="modal-close" id="modal-close" aria-label="Close project">&#215;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Main image — injected by JS -->
+        <div id="modal-main-img-wrap"></div>
+
+        <!-- Thumbnails — injected by JS -->
+        <div class="modal-thumbs" id="modal-thumbs"></div>
+
+        <!-- Metadata grid — injected by JS -->
+        <div class="modal-meta-grid" id="modal-meta-grid"></div>
+
+        <!-- Description -->
+        <p class="modal-desc" id="modal-desc"></p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-inner">
+      <a href="mailto:[your@email.com]" class="contact-email">[your@email.com]</a>
+      <div class="socials">
+        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">[Platform]</a>
+        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">[Platform]</a>
+        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">[Platform]</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
