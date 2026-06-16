@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Your Name] — Portfolio</title>
+  <title>HFreeCode</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="Files/Images/Favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,15 +16,15 @@
   <canvas id="leaf-canvas" aria-hidden="true"></canvas>
 
   <header>
-    <span class="site-name">[Your Name]</span>
+    <span class="site-name"><b>HFreeCode</b> • Portfolio</span>
     <nav class="tab-nav" role="tablist" aria-label="Portfolio sections">
-      <button class="tab-btn active" role="tab" aria-selected="true"
-              aria-controls="panel-modelling" data-tab="modelling">
-        3D Modelling
-      </button>
       <button class="tab-btn" role="tab" aria-selected="false"
               aria-controls="panel-about" data-tab="about">
         About
+      </button>
+            <button class="tab-btn active" role="tab" aria-selected="true"
+              aria-controls="panel-modelling" data-tab="modelling">
+        3D Modelling
       </button>
       <button class="tab-btn" role="tab" aria-selected="false"
               aria-controls="panel-software" data-tab="software">
@@ -42,9 +42,19 @@
     <section class="tab-panel active" id="panel-modelling"
              role="tabpanel" aria-label="3D Modelling">
 
+      <div class="section reveal" id="why-hire-me">
+        <h2 class="section-label">Why Hire Me?</h2>
+        <p class="why-hire-me-p">Just like every other 3D artist, I have the abililty to create a variety of 3D models which cater to client needs and expectations. But what sets me apart is my attention to detail and commitment to delivering high-quality work that exceeds client expectations. Additonally, I have very quick turnaround times and will always be open to Model Revision and making last minute adjustments. But most importantly, I offer the MOST affordable and competitive pricing in the industry.</p>
+      </div>
+
+      <div class="section reveal" id="price-matching">
+        <h2 class="section-label">Price Matching</h2>
+        <p class="price-matching-p">I guarantee to match or beat any competitor's price for similar 3D modelling services. If you find a better deal elsewhere, and have the capibilites to prove that, I will be open to matching it or beating it by 5-10%.</p>
+      </div>
+
       <!-- Carousel ─────────────────────────────── -->
       <div class="section reveal" id="carousel-section">
-        <h2 class="section-label">Work</h2>
+        <h2 class="section-label">Previous Work</h2>
         <div class="carousel-wrap">
 
           <div class="carousel-track-outer" id="carousel-track-outer">
@@ -76,40 +86,58 @@
         </div>
       </div>
 
-      <!-- Software ──────────────────────────────── -->
-      <div class="section reveal reveal-delay-1">
-        <h2 class="section-label">Software</h2>
-        <div class="tags">
-          <span class="tag">[Software Name]</span>
-          <span class="tag">[Software Name]</span>
-          <span class="tag">[Software Name]</span>
-          <span class="tag">[Software Name]</span>
-          <span class="tag">[Software Name]</span>
+      <div class="section reveal" id="laws-section">     
+        <h2 class="section-label">HFree Laws</h2> 
+        <div class ="laws-list">
+          <p class="law-item"><b>1</b> • <small>10% of all projects will be paid upfront (20% for large projects)</small></p>
+          <p class="law-item"><b>2</b> • <small>After project completion, I will do up to 3 rounds of revisions at no extra cost.</small></p>
+          <p class="law-item"><b>3</b> • <small>Before starting any project, I will provide a detailed quote and timeline.</small></p>
+          <p class="law-item"><b>4</b> • <small>If I do not meet my timeline, I will deliver the final project at a cheaper price.</small></p>
+          <p class="law-item"><b>5</b> • <small>I do not accept projects that are outside my area of expertise.</small></p>
+          <p class="law-item"><b>6</b> • <small>I do not accept refunds unless I have failed to deliver the agreed-upon work.</small></p>
+          <p class="law-item"><b>7</b> • <small>I will not work with clients who are disrespectful or rude.</small></p>
         </div>
       </div>
 
+
+      <!-- Software ──────────────────────────────── -->
+      <div class="section reveal reveal-delay-1">
+        <h2 class="section-label">The Software I Use</h2>
+        <div class="tags">
+          <span class="tag">Blender</span>
+          <span class="tag">Maya</span>
+          <span class="tag">Canva</span>
+          <span class="tag">Unreal Enginge</span>
+          <span class="tag">Roblox Studio</span>
+        </div>
+      </div>
+
+
+          
+
+
       <!-- Downloads ─────────────────────────────── -->
       <div class="section reveal reveal-delay-2">
-        <h2 class="section-label">Downloads</h2>
+        <h2 class="section-label">Free Downloads</h2>
         <ul class="download-list">
           <li class="download-item">
-            <a href="#" class="download-link">
-              <span class="download-name">[File or Project Name]</span>
-              <span class="download-meta">[Format] · [Size]</span>
+            <a href="Files/FreeDownloads/Dropper.blend" class="download-link">
+              <span class="download-name">Roblox Dropper | <i>Low Poly</i></span>
+              <span class="download-meta">[.blend] · [112KB]</span> 
               <span class="download-icon" aria-hidden="true">↓</span>
             </a>
           </li>
           <li class="download-item">
-            <a href="#" class="download-link">
-              <span class="download-name">[File or Project Name]</span>
-              <span class="download-meta">[Format] · [Size]</span>
+            <a href="Files/FreeDownloads/M40.blend" class="download-link">
+              <span class="download-name">M40 Sniper Rifle | <i>Medium Poly</i></span>
+              <span class="download-meta">[.blend] · [2.7MB]</span>
               <span class="download-icon" aria-hidden="true">↓</span>
             </a>
           </li>
           <li class="download-item">
-            <a href="#" class="download-link">
-              <span class="download-name">[File or Project Name]</span>
-              <span class="download-meta">[Format] · [Size]</span>
+            <a href="Files/FreeDownloads/Tiger.blend" class="download-link">
+              <span class="download-name">Tiger | <i>Medium Poly</i></span>
+              <span class="download-meta">[.blend] · [1.3MB]</span>
               <span class="download-icon" aria-hidden="true">↓</span>
             </a>
           </li>
@@ -124,80 +152,142 @@
          — bio types itself in when tab is opened
          — stats card shows screenshot on hover
     ══════════════════════════════════════════ -->
-    <section class="tab-panel" id="panel-about"
+<section class="tab-panel" id="panel-about"
              role="tabpanel" aria-label="About">
 
-      <!-- Typewriter bio — no .reveal, cursor appears first then types ── -->
-      <div class="about-section">
-        <!--
-          data-text: replace the placeholder below with your real bio.
-          Avoid apostrophes inside the attribute value; use &#39; if needed.
-        -->
-        <p class="about-tagline" id="about-tagline"
-           data-text="[A personal statement about who you are as a 3D artist — your style, what drives the work, and where you want to take it. Replace this placeholder with something honest and specific to you.]"><span
-           id="typewriter-text-content"></span><span class="typewriter-cursor" aria-hidden="true"></span></p>
+    <!-- Who Am I ─────────────────────────────────── -->
+<div class="about-section">
+      <p class="about-tagline" id="about-tagline"
+         data-text="About Me, HFreeCode."><span
+         id="typewriter-text-content"></span><span class="typewriter-cursor" aria-hidden="true"></span></p>
+    </div>
+
+  <div class="section reveal">
+    <h2 class="section-label">Who Am I</h2>
+    <div class="who-am-i">
+    <div class="who-am-i-images">
+        <img src="Files/Images/Cannock Chase with Ho's.jpg" alt="Profile photo 1" class="profile-img">
+        <img src="Files/Images/Me&Lori.jpg" alt="Profile photo 2" class="profile-img">
+        <img src="Files/Images/Me&LoriInCar.jpg" alt="Profile photo 3" class="profile-img">
       </div>
-
-      <!-- Stats ─────────────────────────────────── -->
-      <div class="section reveal">
-        <h2 class="section-label">Stats</h2>
-        <div class="stats-row">
-
-          <!-- Blender hours — hover reveals screenshot ── -->
-          <!-- Replace blender-hours.png with your actual screenshot file -->
-          <div class="stat-card">
-            <span class="stat-card-label">Hours in Blender</span>
-            <span class="stat-card-value">[X,XXX]</span>
-            <span class="stat-card-sub">and counting</span>
-            <div class="stat-card-screenshot" id="blender-screenshot-wrap">
-              <img src="blender-hours.png" alt="Blender hours screenshot" id="blender-screenshot-img">
-            </div>
-          </div>
-
-          <div class="stat-card">
-            <span class="stat-card-label">Projects Completed</span>
-            <span class="stat-card-value">[XX]</span>
-            <span class="stat-card-sub">client &amp; personal</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="stat-card-label">Years Modelling</span>
-            <span class="stat-card-value">[X]</span>
-            <span class="stat-card-sub">self-taught</span>
-          </div>
-
+      <div class="who-am-i-facts">
+        <p class="about-p">I am Harvey, a 19 year old 3D artist from England and aspiring software developer. My passion currently lies in creating detailed 3D models and immersive experiences. However my long term goal now is to improve my software development skills and land an entry-level software development position to start my career and make a difference in the industry im passionate about. Outside of work, I enjoy running, cooking, and spending time with family and my girlfriend Lori. Additionally, i'm interested in rugby, MMA, and board games.</p>
+        <div class="about-fact-group">
+          <span class="about-fact-label">Name</span>
+          <span class="about-fact-value">Harvey</span>
+        </div>
+        <div class="about-fact-group">
+          <span class="about-fact-label">Age</span>
+          <span class="about-fact-value">19</span>
+        </div>
+        <div class="about-fact-group">
+          <span class="about-fact-label">Based</span>
+          <span class="about-fact-value">England</span>
+        </div>
+        <div class="about-fact-group">
+          <span class="about-fact-label">Available For</span>
+          <span class="about-fact-value">Commission / Freelance</span>
+        </div>
+        <div class="about-fact-group">
+          <span class="about-fact-label">Language</span>
+          <span class="about-fact-value">English</span>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- Background ─────────────────────────────── -->
-      <!-- about-body has its own border-top + margin in CSS, sits below stats -->
-      <div class="about-body reveal">
-        <div class="about-left">
-          <p class="about-p">[Your background — how you got into 3D modelling and what keeps you coming back to it. Be specific about what draws you to the craft.]</p>
-          <p class="about-p">[Your current focus — what you are working on right now, what you are learning, and where you want to take your work next.]</p>
+  <!-- 3D Modelling ─────────────────────────────── -->
+  <div class="section reveal">
+    <h2 class="section-label">3D Modelling</h2>
+    <div class="about-body">
+      <div class="about-left">
+        <p class="about-p">I have been 3D modelling for almost 6 years now. It started out just as a hobby but what developed that interest into a passion was doing blender challenges with friends and also watching youtube tutorials when I was younger. But now, I am more focused on helping small game developers bring their visions to life. Part of the reason why I can offer such affordable services is because 3D modelling to me is not work, it's a passion and I enjoy every model I create.</p>
+        <p class="about-p">I am currently working on improving my skills in character modelling and environment design. Along with texturing and sculpting.</p>
+      </div>
+      <div class="about-right">
+        <div class="about-fact-group">
+          <span class="about-fact-label">Speciality</span>
+          <span class="about-fact-value">Weapons, Buildings, Medium-Poly, Product Modelling</span>
         </div>
-        <div class="about-right">
-          <div class="about-fact-group">
-            <span class="about-fact-label">Speciality</span>
-            <span class="about-fact-value">[e.g. Hard Surface / Environments / Characters]</span>
+        <div class="about-fact-group">
+          <span class="about-fact-label">Primary Software</span>
+          <span class="about-fact-value">Blender 5.1.2</span>
+        </div>
+        <div class="about-fact-group">
+          <span class="about-fact-label">Experience</span>
+          <span class="about-fact-value">6.5 years</span>
+        </div>
+        <div class="about-fact-group">
+          <span class="about-fact-label">Preferred Style (<i>Not limited to</i>)</span>
+          <span class="about-fact-value">Medium-Poly Realism</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Software Development ─────────────────────── -->
+  <div class="section reveal">
+    <h2 class="section-label">Software Development</h2>
+    <div class="software-coming-soon">
+      <p class="about-p">I am currently working on passion projects to help me grow as a developer. So currently for now, this part of my portfolio is under construction. :)</p>
+      <div class="terminal-block" style="margin-top: 1.5rem;">
+        <div class="terminal-bar">
+          <span class="terminal-dot red"  aria-hidden="true"></span>
+          <span class="terminal-dot amber" aria-hidden="true"></span>
+          <span class="terminal-dot green" aria-hidden="true"></span>
+          <span class="terminal-title">~/about — software</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line visible">
+            <span class="terminal-prompt">$</span>
+            <span class="terminal-cmd">cat status.md</span>
           </div>
-          <div class="about-fact-group">
-            <span class="about-fact-label">Primary Software</span>
-            <span class="about-fact-value">[e.g. Blender 4.x]</span>
+          <div class="terminal-line visible">
+            <span class="terminal-output terminal-success">actively learning. more to come soon.</span>
           </div>
-          <div class="about-fact-group">
-            <span class="about-fact-label">Based</span>
-            <span class="about-fact-value">[Your location]</span>
-          </div>
-          <div class="about-fact-group">
-            <span class="about-fact-label">Available For</span>
-            <span class="about-fact-value">[Commission / Freelance / Collab]</span>
+          <div class="terminal-line visible">
+            <span class="terminal-prompt">$</span>
+            <span class="cs-cursor" aria-hidden="true">_</span>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-    </section>
+  <!-- Overall Stats ────────────────────────────── -->
+  <div class="section reveal">
+    <h2 class="section-label">Stats</h2>
+    <div class="stats-row">
+      <div class="stat-card">
+        <span class="stat-card-label">Hours in Blender <small><i>(as of 16/06/26)</i></small></span>
+        <span class="stat-card-value">788</span>
+        <span class="stat-card-sub">and counting</span>
+        <div class="stat-card-screenshot" id="blender-screenshot-wrap">
+          <img src="Files/Images/Blender Hours.png" alt="Blender hours screenshot" id="blender-screenshot-img">
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-label">Projects Completed</span>
+        <span class="stat-card-value">32</span>
+        <span class="stat-card-sub">client: 12, personal: 20</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-label">Years Modelling</span>
+        <span class="stat-card-value">6.5</span>
+        <span class="stat-card-sub">self-taught</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-label">Years Coding</span>
+        <span class="stat-card-value">1.5</span>
+        <span class="stat-card-sub">self-taught</span>
+      </div>
+  <!-- My Goals ─────────────────────────────────── -->
+  <div class="section reveal">
+    <h2 class="section-label">My Goals</h2>
+    <p class="about-p" style="max-width: 680px;">My main goal moving foward now as I'm getting older is to massively improve my skills as a software developer and land a job or apprenticeship as a junior software developer. I'll do this by working on passion projects, constantly watching guides, and learning how to make my code professional and neat. </p>
+  </div>
 
+</section>
 
     <!-- ══════════════════════════════════════════
          SOFTWARE DEV
@@ -210,7 +300,7 @@
       <div class="software-hero">
         <p class="section-label">Software Development</p>
         <h2 class="software-title">Something is<br><em>growing here.</em></h2>
-        <p class="software-soon-text">[Your background in software — languages, frameworks, tools, projects you are building or learning. This section is actively being developed.]</p>
+        <p class="software-soon-text">I am currently building my skills in software development. Personal projects will be showcased here as they are completed.</p>
         <div class="terminal-block">
           <div class="terminal-bar">
             <span class="terminal-dot red"  aria-hidden="true"></span>
@@ -252,11 +342,11 @@
       <div class="section reveal">
         <h2 class="section-label">Languages &amp; Tools</h2>
         <div class="tags">
-          <span class="tag">[Language]</span>
-          <span class="tag">[Language]</span>
-          <span class="tag">[Framework]</span>
-          <span class="tag">[Tool]</span>
-          <span class="tag">[Tool]</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Git</span>
         </div>
       </div>
 
@@ -264,45 +354,13 @@
 
   </main>
 
-
-  <!-- ══════════════════════════════════════════
-       PROJECT MODAL — full-screen lightbox
-       Opens when "View Details" is clicked.
-  ══════════════════════════════════════════ -->
-  <div class="modal-backdrop" id="modal-backdrop"
-       role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal" id="modal">
-
-      <div class="modal-header">
-        <h2 class="modal-title" id="modal-title"></h2>
-        <button class="modal-close" id="modal-close" aria-label="Close project">&#215;</button>
-      </div>
-
-      <div class="modal-body">
-        <!-- Main image — injected by JS -->
-        <div id="modal-main-img-wrap"></div>
-
-        <!-- Thumbnails — injected by JS -->
-        <div class="modal-thumbs" id="modal-thumbs"></div>
-
-        <!-- Metadata grid — injected by JS -->
-        <div class="modal-meta-grid" id="modal-meta-grid"></div>
-
-        <!-- Description -->
-        <p class="modal-desc" id="modal-desc"></p>
-      </div>
-
-    </div>
-  </div>
-
-
   <footer>
     <div class="footer-inner">
-      <a href="mailto:[your@email.com]" class="contact-email">[your@email.com]</a>
+      <a href="mailto:hfreemancode@proton.me" class="contact-email">hfreemancode@proton.me</a>
       <div class="socials">
-        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">[Platform]</a>
-        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">[Platform]</a>
-        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">[Platform]</a>
+        <a href="https://github.com/HFreeCode" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.tiktok.com/@hfreecode" class="social-link" target="_blank" rel="noopener noreferrer">Tiktok</a>
+        <a href="https://discord.com/users/1513815507806195712" class="social-link" target="_blank" rel="noopener noreferrer">Discord</a>
       </div>
     </div>
   </footer>

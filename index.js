@@ -17,83 +17,59 @@
 const projects = [
   {
     id: 1,
-    title:       '[Project Title One]',
-    shortDesc:   '[A one-line tagline — the concept or subject of this piece.]',
-    description: '[Longer description of this project. What was the concept? What were the technical challenges? What process did you follow? What did you learn or achieve?]',
-    date:        '[Month YYYY]',
-    price:       '£[0.00]',
-    timeSpent:   '[X] hrs',
-    triangles:   '[XXX,XXX]',
-    polycount:   '[XXX,XXX]',
-    renderer:    '[Cycles / EEVEE]',
-    software:    ['Blender', '[Other]'],
-    client:      '[Client or Personal]',
-    category:    '[Category]',
-    images:      ['', '', ''],  // paths: main image, then up to 2 more
+    title:       'Low Poly Roblox Dropper',
+    shortDesc:   'A VERY simple low poly Roblox dropper for a Roblox Game Developer. This model was made in under 10 minutes, and is a very simple low poly model with no textures or UV unwrapping. The client only needed the model for their game, so no additional work was done. I also provided the client with a .blend file of the model, so they could make any adjustments they needed to the model for their game and additional models with varying sizes just incase.',
+    date:        'June 2026',
+    price:       '50R',
+    timeSpent:   '10 minutes',
+    polycount:   'Aprox 900',
+    software:    'Blender',
+    client:      'Client',
+    category:    'Game Asset',
+    images:      ['Files/MyWork/LowPolyRobloxDropper/Dropper Image 1.png', 'Files/MyWork/LowPolyRobloxDropper/Dropper Image 2.png', 'Files/MyWork/LowPolyRobloxDropper/Dropper Image 3.png'],  // paths: main image, then up to 2 more
   },
   {
     id: 2,
-    title:       '[Project Title Two]',
-    shortDesc:   '[A one-line tagline — the concept or subject of this piece.]',
-    description: '[Longer description of this project.]',
-    date:        '[Month YYYY]',
-    price:       '£[0.00]',
-    timeSpent:   '[X] hrs',
-    triangles:   '[XXX,XXX]',
-    polycount:   '[XXX,XXX]',
-    renderer:    '[Cycles / EEVEE]',
-    software:    ['Blender'],
-    client:      '[Client or Personal]',
-    category:    '[Category]',
-    images:      ['', '', ''],
+    title:       ' Medium Poly M40 Sniper Rifle',
+    shortDesc:   'A medium poly M40 sniper rifle, with a scope and bullet model for a Roblox Game Developer. The model was not textured or UV unwrapped, as the client only needed the model for their game. Textures seen on image were quickly made for the purpose of this portfolio.',
+    date:        'March 2026',
+    price:       '£6.50',
+    timeSpent:   '3 Working Hours',
+    polycount:   'Approx 12,000',
+    software:    'Blender',
+    client:      'Client',
+    category:    'Weapon',
+    images:      ['Files/MyWork/MedPolyM40/Main Image.png', 'Files/MyWork/MedPolyM40/Tag.png', 'Files/MyWork/MedPolyM40/Scope Close Up.png', 'Files/MyWork/MedPolyM40/Bullet Close Up.png'],  // paths: main image, then up to 2 more
   },
   {
     id: 3,
-    title:       '[Project Title Three]',
-    shortDesc:   '[A one-line tagline — the concept or subject of this piece.]',
-    description: '[Longer description of this project.]',
-    date:        '[Month YYYY]',
-    price:       '£[0.00]',
-    timeSpent:   '[X] hrs',
-    triangles:   '[XXX,XXX]',
-    polycount:   '[XXX,XXX]',
-    renderer:    '[Cycles / EEVEE]',
-    software:    ['Blender', '[Other]'],
-    client:      '[Client or Personal]',
-    category:    '[Category]',
-    images:      ['', '', ''],
+    title:       'Medium Poly Japanese Tanto Sword',
+    shortDesc:   'A detailed medium poly Japanese tanto sword model for a Roblox Game Developer. No scabbard was modelled, as the client only needed the sword for their game. Additionally, the sword had no textures or UV unwrapping, as the client only needed the model for their game. Textures seen on image were quickly made for the purpose of this portfolio.',
+    date:        'April 2026',
+    price:       '110R',
+    timeSpent:   '1 Working Hour',
+    polycount:   'Approx 9,000',
+    images:      ['Files/MyWork/MedPolyTantoSword/Main Image.png', 'Files/MyWork/MedPolyTantoSword/Tag Closeup.png'],  // paths: main image, then up to 2 more
   },
   {
     id: 4,
-    title:       '[Project Title Four]',
-    shortDesc:   '[A one-line tagline — the concept or subject of this piece.]',
-    description: '[Longer description of this project.]',
-    date:        '[Month YYYY]',
-    price:       '£[0.00]',
-    timeSpent:   '[X] hrs',
-    triangles:   '[XXX,XXX]',
-    polycount:   '[XXX,XXX]',
-    renderer:    '[Cycles / EEVEE]',
-    software:    ['Blender'],
-    client:      '[Client or Personal]',
-    category:    '[Category]',
-    images:      ['', '', ''],
+    title:       'Medium Poly Tiger',
+    shortDesc:   'A detailed medium poly tiger model for a Roblox Game Developer. The tiger was fully rigged and ready for animation, with a full skeleton and weight painting. The tiger was also fully textured and UV unwrapped which the client asked for after the model was completed and paid extra for.',
+    date:        'May 2026',
+    price:       '440R',
+    timeSpent:   '4.5 Working Hours',
+    polycount:   'Approx 9,000',
+    images:      ['Files/MyWork/MedPolyTiger/Main Image 1.png', 'Files/MyWork/MedPolyTiger/Main Image 2.png', 'Files/MyWork/MedPolyTiger/Main Image 3.png'],
   },
   {
     id: 5,
-    title:       '[Project Title Five]',
-    shortDesc:   '[A one-line tagline — the concept or subject of this piece.]',
-    description: '[Longer description of this project.]',
-    date:        '[Month YYYY]',
-    price:       '£[0.00]',
-    timeSpent:   '[X] hrs',
-    triangles:   '[XXX,XXX]',
-    polycount:   '[XXX,XXX]',
-    renderer:    '[Cycles / EEVEE]',
-    software:    ['Blender', '[Other]'],
-    client:      '[Client or Personal]',
-    category:    '[Category]',
-    images:      ['', '', ''],
+    title:       'High Poly Ford Mustang',
+    shortDesc:   'A detailed high poly Ford Mustang model for an Indie Game Developer. No interior was modelled, as the client only needed the exterior for their game. The model was fully textured and UV unwrapped, with a full set of materials and textures for the body, wheels, windows, and other parts. The model was also fully rigged and ready for animation.',
+    date:        'June 2026',
+    price:       '£35',
+    timeSpent:   '30-35 Working Hours',
+    polycount:   'Approx 1.1 Million',
+    images:      ['Files/MyWork/HighPolyFordMustang/Main Image 1.png', 'Files/MyWork/HighPolyFordMustang/Main Image 2.png', 'Files/MyWork/HighPolyFordMustang/Front On Image.png'],
   },
 ];
 
@@ -230,9 +206,9 @@ function buildCarousel() {
     /* ── quick meta (4 facts shown on the card) ── */
     const metaHTML = [
       { label: 'Date',      value: project.date      },
-      { label: 'Price',     value: project.price      },
+      { label: 'Price Charged',     value: project.price      },
       { label: 'Time',      value: project.timeSpent  },
-      { label: 'Triangles', value: project.triangles  },
+      { label: 'Polycount',      value: project.polycount  },
     ].map(m => `
       <div class="carousel-meta-item">
         <span class="meta-label">${m.label}</span>
@@ -249,9 +225,6 @@ function buildCarousel() {
           <h3 class="carousel-title">${project.title}</h3>
           <p class="carousel-desc">${project.shortDesc}</p>
           <div class="carousel-meta-grid">${metaHTML}</div>
-          <button class="carousel-open-btn" data-project-id="${project.id}">
-            View Details →
-          </button>
         </div>
       </div>`;
 
@@ -275,19 +248,6 @@ function buildCarousel() {
       e.stopPropagation();
       swapThumb(thumb);
       return;
-    }
-    // "View Details" button → open modal
-    const openBtn = e.target.closest('.carousel-open-btn');
-    if (openBtn) {
-      e.stopPropagation();
-      openModal(parseInt(openBtn.dataset.projectId));
-      return;
-    }
-    // Clicking the main image area also opens modal
-    const mainImg = e.target.closest('.carousel-card-images');
-    if (mainImg) {
-      const c = mainImg.closest('.carousel-card');
-      if (c) openModal(projects[parseInt(c.dataset.index)].id);
     }
   });
 }
@@ -375,130 +335,18 @@ function initCarousel() {
   }
 }
 
-
-/* ─────────────────────────────────────────────────────────────
-   MODAL
-   ─────────────────────────────────────────────────────────────
-   Full-screen lightbox that shows all project details.
-   Opens when "View Details" is clicked from the carousel
-   or when a masonry card is clicked.
-   ───────────────────────────────────────────────────────────── */
-function openModal(projectId) {
-  const project = projects.find(p => p.id === projectId);
-  if (!project) return;
-
-  /* Title */
-  document.getElementById('modal-title').textContent = project.title;
-
-  /* Main image */
-  const mainWrap = document.getElementById('modal-main-img-wrap');
-  mainWrap.innerHTML = project.images[0]
-    ? `<img class="modal-main-img" id="modal-active-img"
-            src="${project.images[0]}" alt="${project.title}">`
-    : `<div class="modal-img-placeholder">no image yet</div>`;
-
-  /* Thumbnails */
-  const thumbsEl = document.getElementById('modal-thumbs');
-  thumbsEl.innerHTML = '';
-  project.images.forEach((src, i) => {
-    if (src) {
-      const img    = document.createElement('img');
-      img.className = 'modal-thumb' + (i === 0 ? ' active-thumb' : '');
-      img.src       = src;
-      img.alt       = `${project.title} view ${i + 1}`;
-      img.loading   = 'lazy';
-      img.addEventListener('click', () => {
-        const activeImg = document.getElementById('modal-active-img');
-        if (activeImg) activeImg.src = src;
-        thumbsEl.querySelectorAll('.modal-thumb').forEach(t => t.classList.remove('active-thumb'));
-        img.classList.add('active-thumb');
-      });
-      thumbsEl.appendChild(img);
-    } else {
-      const ph    = document.createElement('div');
-      ph.className = 'modal-thumb-placeholder';
-      thumbsEl.appendChild(ph);
-    }
-  });
-
-  /* Metadata grid — all the project details */
-  const metaGrid   = document.getElementById('modal-meta-grid');
-  const softwareStr = Array.isArray(project.software)
-    ? project.software.join(', ')
-    : project.software;
-
-  metaGrid.innerHTML = [
-    { label: 'Date',           value: project.date      },
-    { label: 'Price Charged',  value: project.price      },
-    { label: 'Time Spent',     value: project.timeSpent  },
-    { label: 'Triangle Count', value: project.triangles  },
-    { label: 'Polycount',      value: project.polycount  },
-    { label: 'Renderer',       value: project.renderer   },
-    { label: 'Software',       value: softwareStr        },
-    { label: 'Client',         value: project.client     },
-    { label: 'Category',       value: project.category   },
-  ].map(m => `
-    <div class="modal-meta-item">
-      <span class="modal-meta-label">${m.label}</span>
-      <span class="modal-meta-value">${m.value}</span>
-    </div>`).join('');
-
-  /* Description */
-  document.getElementById('modal-desc').textContent = project.description;
-
-  /* Open */
-  document.getElementById('modal-backdrop').classList.add('open');
-  document.body.style.overflow = 'hidden';
-  // Move focus to close button for accessibility
-  setTimeout(() => document.getElementById('modal-close')?.focus(), 60);
-}
-
-function closeModal() {
-  document.getElementById('modal-backdrop').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-function initModal() {
-  document.getElementById('modal-close')?.addEventListener('click', closeModal);
-
-  // Click outside the modal panel closes it
-  document.getElementById('modal-backdrop')?.addEventListener('click', e => {
-    if (e.target === e.currentTarget) closeModal();
-  });
-}
-
-
-/* ─────────────────────────────────────────────────────────────
-   MASONRY / VIEW ALL
-   ─────────────────────────────────────────────────────────────
-   Expands a masonry grid below the carousel when
-   "View All Work" is clicked. Clicking any card in the
-   grid opens that project's modal.
-   ───────────────────────────────────────────────────────────── */
 function buildMasonry() {
   const grid = document.getElementById('masonry-grid');
   if (!grid) return;
   grid.innerHTML = '';
-
   projects.forEach(project => {
     const item = document.createElement('div');
     item.className = 'masonry-item';
-    item.setAttribute('role', 'button');
-    item.setAttribute('tabindex', '0');
-    item.setAttribute('aria-label', `Open ${project.title}`);
-
     item.innerHTML = project.images[0]
       ? `<img src="${project.images[0]}" alt="${project.title}" loading="lazy">
          <div class="masonry-item-caption">${project.title} · ${project.date}</div>`
       : `<div class="masonry-img-placeholder" style="aspect-ratio:4/3">no image yet</div>
          <div class="masonry-item-caption">${project.title} · ${project.date}</div>`;
-
-    const open = () => openModal(project.id);
-    item.addEventListener('click', open);
-    item.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
-    });
-
     grid.appendChild(item);
   });
 }
@@ -507,7 +355,6 @@ function openMasonry() {
   buildMasonry();
   const section = document.getElementById('masonry-section');
   section.classList.add('open');
-  // Smooth scroll to masonry grid so the user sees it
   setTimeout(() => section.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
 }
 
@@ -520,7 +367,6 @@ function initMasonry() {
   document.getElementById('masonry-close')?.addEventListener('click', closeMasonry);
 }
 
-
 /* ─────────────────────────────────────────────────────────────
    TABS
    ─────────────────────────────────────────────────────────────
@@ -528,7 +374,6 @@ function initMasonry() {
    Also triggers typewriter and terminal animations on first open.
    ───────────────────────────────────────────────────────────── */
 let typewriterDone   = false;
-let terminalAnimated = false;
 
 function initTabs() {
   const tabs   = document.querySelectorAll('.tab-btn');
@@ -658,23 +503,6 @@ function initBlenderScreenshot() {
   });
 }
 
-
-/* ─────────────────────────────────────────────────────────────
-   KEYBOARD
-   ─────────────────────────────────────────────────────────────
-   Escape closes the modal from anywhere on the page.
-   ───────────────────────────────────────────────────────────── */
-function initKeyboard() {
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-      if (document.getElementById('modal-backdrop')?.classList.contains('open')) {
-        closeModal();
-      }
-    }
-  });
-}
-
-
 /* ─────────────────────────────────────────────────────────────
    CSS PATCH — carousel view-all row
    ─────────────────────────────────────────────────────────────
@@ -689,9 +517,7 @@ function injectHelperStyles() {
       justify-content: center;
       margin-top: 1.5rem;
     }
-    .carousel-card-images {
-      min-width: 0;
-    }
+    .carousel-card-images { min-width: 0; }
   `;
   document.head.appendChild(style);
 }
@@ -707,14 +533,10 @@ document.addEventListener('DOMContentLoaded', () => {
   injectHelperStyles();
   initLeaves();
   initCarousel();
-  initModal();
   initMasonry();
   initTabs();
-  initKeyboard();
   initBlenderScreenshot();
 
-  // Trigger reveals for the default active panel after the
-  // page's own panelIn animation settles (~450ms).
   setTimeout(() => {
     observeReveals(document.getElementById('panel-modelling'));
   }, 450);

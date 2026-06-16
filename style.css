@@ -275,7 +275,7 @@ main {
 /* main image */
 .carousel-main-img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 6px;
   border: 1px solid var(--border);
@@ -374,30 +374,6 @@ main {
   color: var(--text);
 }
 
-.carousel-open-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: none;
-  border: 1px solid var(--border-light);
-  color: var(--accent-bright);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.625rem 1.25rem;
-  border-radius: 6px;
-  cursor: pointer;
-  align-self: flex-start;
-  transition: background 200ms, border-color 200ms;
-  margin-top: 0.5rem;
-}
-
-.carousel-open-btn:hover {
-  background: var(--accent-glow);
-  border-color: var(--accent);
-}
-
-/* arrows */
 .carousel-controls {
   display: flex;
   align-items: center;
@@ -447,6 +423,8 @@ main {
   transform: scale(1.35);
 }
 
+
+/* ─── Masonry grid ───────────────────────────────────── */
 /* ─── View All ───────────────────────────────────────── */
 .view-all-btn {
   display: inline-flex;
@@ -512,7 +490,7 @@ main {
 .masonry-item {
   break-inside: avoid;
   margin-bottom: 1rem;
-  cursor: pointer;
+  cursor: default;
   position: relative;
   border-radius: 6px;
   overflow: hidden;
@@ -548,178 +526,6 @@ main {
   background: var(--surface);
 }
 
-/* ─── Modal / Lightbox ───────────────────────────────── */
-.modal-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(4, 7, 4, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 300ms var(--ease-in-out);
-}
-
-.modal-backdrop.open {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.modal {
-  background: var(--surface);
-  border: 1px solid var(--border-light);
-  border-radius: 12px;
-  width: 100%;
-  max-width: 860px;
-  max-height: 90vh;
-  overflow-y: auto;
-  transform: scale(0.96) translateY(12px);
-  transition: transform 320ms var(--ease-out);
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-}
-
-.modal-backdrop.open .modal {
-  transform: scale(1) translateY(0);
-}
-
-.modal-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 1.75rem 2rem 1.25rem;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  background: var(--surface);
-  z-index: 1;
-}
-
-.modal-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.2rem, 2.5vw, 1.75rem);
-  color: var(--text);
-  line-height: 1.3;
-}
-
-.modal-close {
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: color 200ms, border-color 200ms;
-  flex-shrink: 0;
-  margin-top: 0.15rem;
-}
-
-.modal-close:hover {
-  color: var(--text);
-  border-color: var(--muted);
-}
-
-.modal-body {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.modal-main-img {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  display: block;
-}
-
-.modal-img-placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: var(--bg-mid);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted);
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-}
-
-.modal-thumbs {
-  display: flex;
-  gap: 0.625rem;
-}
-
-.modal-thumb {
-  flex: 1;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 5px;
-  border: 1px solid var(--border);
-  cursor: pointer;
-  transition: border-color 200ms;
-}
-
-.modal-thumb:hover, .modal-thumb.active-thumb {
-  border-color: var(--accent-bright);
-}
-
-.modal-thumb-placeholder {
-  flex: 1;
-  aspect-ratio: 4 / 3;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-}
-
-.modal-meta-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.modal-meta-item {
-  background: var(--bg-mid);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1rem 1.125rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.modal-meta-label {
-  font-family: var(--font-mono);
-  font-size: 0.625rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.modal-meta-value {
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: var(--text);
-}
-
-.modal-desc {
-  font-size: 0.9375rem;
-  color: var(--text-dim);
-  line-height: 1.7;
-}
 
 /* ─── Stat card (Blender hours) ──────────────────────── */
 .stats-row {
@@ -1057,9 +863,6 @@ footer {
   .carousel-card-inner {
     grid-template-columns: 1fr;
   }
-  .modal-meta-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .masonry-grid {
     columns: 2;
   }
@@ -1088,14 +891,52 @@ footer {
   }
 }
 
+/* ─── Who Am I ───────────────────────────────────── */
+.who-am-i {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.profile-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.who-am-i-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media (max-width: 580px) {
+  .who-am-i {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-img {
+    max-width: 180px;
+  }
+}
+
 @media (max-width: 580px) {
   .carousel-thumbs { grid-template-columns: repeat(3, 1fr); }
   .masonry-grid { columns: 1; }
-  .modal-meta-grid { grid-template-columns: repeat(2, 1fr); }
   .tab-nav { width: 100%; }
   .tab-btn { flex: 1; justify-content: center; font-size: 0.8125rem; }
-  .modal { max-height: 95vh; }
-  .modal-body { padding: 1.25rem; }
+}
+
+/* ─── Reduced motion ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .cs-cursor, .typewriter-cursor { animation: none; opacity: 1; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .tab-panel { animation: none; opacity: 1; transform: none; }
+  #leaf-canvas { display: none; }
 }
 
 /* ─── Reduced motion ─────────────────────────────────── */
